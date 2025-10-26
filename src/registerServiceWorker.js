@@ -1,10 +1,8 @@
 export function register() {
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./service-worker.js').then(reg => {
-        console.log('SW registered', reg.scope)
-      }).catch(err => console.warn('SW register failed', err))
-    })
+    navigator.serviceWorker.register('/stock-portfolio/service-worker.js')
+      .then(() => console.log('SW registered!'))
+      .catch(err => console.error('SW registration failed:', err));
   }
 }
 
@@ -14,3 +12,4 @@ export function unregister() {
     navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => r.unregister()))
   }
 }
+
