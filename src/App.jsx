@@ -46,8 +46,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4 transition-colors duration-300">
       {/* Header */}
-      <Header totalWealth={totalWealth} totalCost={totalCost} totalProfit={totalProfit} />
-
+      <Header
+        totalWealth={totalWealth}
+        totalCost={totalCost}
+        totalProfit={totalProfit}
+        totalDeposit={stocks.reduce((sum, s) => sum + (Number(s.cost) || 0), 0)}
+        totalFees={stocks.reduce((sum, s) => sum + (Number(s.fee) || 0), 0)}
+      />
 
       {/* Calculator form for adding new stock */}
       <StockForm setStocks={setStocks} />

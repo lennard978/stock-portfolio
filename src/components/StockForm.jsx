@@ -50,7 +50,7 @@ export default function StockForm({ setStocks }) {
   return (
     <form
       onSubmit={handleAddStock}
-      className="max-w-md mx-auto p-4 mt-6 rounded-2xl shadow-lg bg-white dark:bg-gray-900"
+      className="max-w-md mx-auto p-4 pt-0 mt-0 rounded-2xl shadow-lg bg-white dark:bg-gray-900"
     >
       <h2 className="text-xl font-bold mb-4 text-center">📈 Stock Calculator</h2>
 
