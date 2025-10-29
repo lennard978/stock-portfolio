@@ -54,13 +54,13 @@ export default function StockList({ stocks, setStocks }) {
         return (
           <div
             key={s.id}
-            className="bg-white dark:bg-gray-800 p-3 rounded shadow flex flex-col sm:flex-row sm:justify-between sm:items-center transition-colors duration-300"
+            className="bg-gray-800 p-3 rounded shadow flex flex-col sm:flex-row sm:justify-between sm:items-center transition-colors duration-300"
           >
             {editingId === s.id ? (
               // Edit mode form
               <div className="flex-1 space-y-2">
                 <input
-                  className="w-full p-1 border rounded dark:bg-gray-700 dark:text-gray-100"
+                  className="w-full p-1 border rounded text-gray-100"
                   value={editData.name}
                   onChange={e => setEditData({ ...editData, name: e.target.value })}
                   placeholder="Stock name"
@@ -68,28 +68,28 @@ export default function StockList({ stocks, setStocks }) {
                 <div className="flex gap-2">
                   <input
                     type="number"
-                    className="w-1/4 p-1 border rounded dark:bg-gray-700 dark:text-gray-100"
+                    className="w-1/4 p-1 border rounded text-gray-100"
                     value={editData.buyPrice}
                     onChange={e => setEditData({ ...editData, buyPrice: e.target.value })}
                     placeholder="Buy €"
                   />
                   <input
                     type="number"
-                    className="w-1/4 p-1 border rounded dark:bg-gray-700 dark:text-gray-100"
+                    className="w-1/4 p-1 border rounded text-gray-100"
                     value={editData.currentPrice}
                     onChange={e => setEditData({ ...editData, currentPrice: e.target.value })}
                     placeholder="Now €"
                   />
                   <input
                     type="number"
-                    className="w-1/4 p-1 border rounded dark:bg-gray-700 dark:text-gray-100"
+                    className="w-1/4 p-1 border rounded text-gray-100"
                     value={editData.shares}
                     onChange={e => setEditData({ ...editData, shares: e.target.value })}
                     placeholder="Shares"
                   />
                   <input
                     type="number"
-                    className="w-1/4 p-1 border rounded dark:bg-gray-700 dark:text-gray-100"
+                    className="w-1/4 p-1 border rounded text-gray-100"
                     value={editData.fee}
                     onChange={e => setEditData({ ...editData, fee: e.target.value })}
                     placeholder="Fee €"
@@ -114,7 +114,7 @@ export default function StockList({ stocks, setStocks }) {
               // Normal display mode
               <>
                 <div className="flex-1">
-                  <div className="font-semibold text-gray-900 dark:text-gray-100">
+                  <div className="font-semibold text-gray-100">
                     {s.name}
                   </div>
 
@@ -132,8 +132,8 @@ export default function StockList({ stocks, setStocks }) {
 
                   <div
                     className={`text-sm font-medium ${profit >= 0
-                        ? 'text-green-600 dark:text-green-400'
-                        : 'text-red-600 dark:text-red-400'
+                      ? 'text-green-600 dark:text-green-400'
+                      : 'text-red-600 dark:text-red-400'
                       }`}
                   >
                     Profit/Loss: €{profit.toFixed(2)} ({profitPercent}%)
@@ -143,13 +143,13 @@ export default function StockList({ stocks, setStocks }) {
                 <div className="flex gap-2 mt-3 sm:mt-0 sm:ml-4">
                   <button
                     onClick={() => startEdit(s)}
-                    className="px-3 py-1 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 rounded hover:bg-blue-100 dark:hover:bg-blue-700 transition-colors duration-300"
+                    className="px-3 py-1 border border-gray-300 dark:border-gray-600 text-gray-100 rounded hover:bg-blue-100 dark:hover:bg-blue-700 transition-colors duration-300"
                   >
                     Edit
                   </button>
                   <button
                     onClick={() => removeStock(s.id)}
-                    className="px-3 py-1 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 rounded hover:bg-red-100 dark:hover:bg-red-700 transition-colors duration-300"
+                    className="px-3 py-1 border border-gray-300 dark:border-gray-600 text-gray-100 rounded hover:bg-red-100 dark:hover:bg-red-700 transition-colors duration-300"
                   >
                     Delete
                   </button>

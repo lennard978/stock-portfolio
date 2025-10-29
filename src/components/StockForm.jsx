@@ -50,7 +50,7 @@ export default function StockForm({ setStocks }) {
   return (
     <form
       onSubmit={handleAddStock}
-      className="max-w-md mx-auto p-4 pt-0 mt-0 rounded-2xl shadow-lg bg-white dark:bg-gray-900"
+      className="max-w-md mx-auto p-4 pt-0 mt-0 rounded-2xl shadow-lg bg-gray-900"
     >
       <h2 className="text-xl font-bold mb-4 text-center">📈 Stock Calculator</h2>
 
@@ -62,7 +62,7 @@ export default function StockForm({ setStocks }) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="e.g. Apple (AAPL)"
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
 
@@ -72,7 +72,7 @@ export default function StockForm({ setStocks }) {
             type="number"
             value={investment}
             onChange={(e) => setInvestment(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
 
@@ -82,7 +82,7 @@ export default function StockForm({ setStocks }) {
             type="number"
             value={fee}
             onChange={(e) => setFee(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
 
@@ -92,7 +92,7 @@ export default function StockForm({ setStocks }) {
             type="number"
             value={buyPrice}
             onChange={(e) => setBuyPrice(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
 
@@ -102,7 +102,7 @@ export default function StockForm({ setStocks }) {
             type="number"
             value={currentPrice}
             onChange={(e) => setCurrentPrice(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
       </div>

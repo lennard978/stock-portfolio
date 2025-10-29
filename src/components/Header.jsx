@@ -9,7 +9,7 @@ export default function Header({ totalWealth, totalCost, totalProfit, totalDepos
       {/* Left side: Total Wealth */}
       <div className="text-left">
         <div className="text-sm text-gray-500 dark:text-gray-400">Total Wealth</div>
-        <div className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+        <div className="text-2xl font-semibold text-gray-100">
           €{totalWealth.toFixed(2)}
         </div>
         <div className="text-sm">
@@ -31,7 +31,7 @@ export default function Header({ totalWealth, totalCost, totalProfit, totalDepos
       {/* Middle: Total Deposit */}
       <div className="text-center">
         <div className="text-sm pt-0 text-gray-500 dark:text-gray-400">Total Deposit</div>
-        <div className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+        <div className="text-2xl font-semibold text-gray-100">
           €{totalDeposit.toFixed(2)}
         </div>
       </div>
@@ -39,7 +39,7 @@ export default function Header({ totalWealth, totalCost, totalProfit, totalDepos
       {/* Right side: Total Fees */}
       <div className="text-right">
         <div className="text-sm text-gray-500 dark:text-gray-400">Total Fees</div>
-        <div className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
+        <div className="text-2xl font-semibold text-gray-100">
           €{totalFees.toFixed(2)}
         </div>
       </div>

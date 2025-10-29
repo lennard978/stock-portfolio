@@ -14,7 +14,7 @@ export default function StockCalculator() {
     investment > 0 ? ((profitLoss / investment) * 100).toFixed(2) : 0;
 
   return (
-    <div className="max-w-md mx-auto p-4 mt-6 rounded-2xl shadow-lg bg-white dark:bg-gray-900">
+    <div className="max-w-md mx-auto p-4 mt-6 rounded-2xl shadow-lg bg-gray-900">
       <h2 className="text-xl font-bold mb-4 text-center">📈 Stock Calc</h2>
 
       <div className="space-y-3">
@@ -24,7 +24,7 @@ export default function StockCalculator() {
             type="number"
             value={investment}
             onChange={(e) => setInvestment(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
 
@@ -34,7 +34,7 @@ export default function StockCalculator() {
             type="number"
             value={fee}
             onChange={(e) => setFee(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
 
@@ -44,7 +44,7 @@ export default function StockCalculator() {
             type="number"
             value={buyPrice}
             onChange={(e) => setBuyPrice(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
 
@@ -54,7 +54,7 @@ export default function StockCalculator() {
             type="number"
             value={currentPrice}
             onChange={(e) => setCurrentPrice(parseFloat(e.target.value) || "")}
-            className="w-full p-2 border rounded-lg bg-gray-50 dark:bg-gray-800"
+            className="w-full p-2 border rounded-lg bg-gray-800"
           />
         </label>
       </div>
