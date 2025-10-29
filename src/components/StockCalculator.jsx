@@ -15,7 +15,7 @@ export default function StockCalculator() {
 
   return (
     <div className="max-w-md mx-auto p-4 mt-6 rounded-2xl shadow-lg bg-white dark:bg-gray-900">
-      <h2 className="text-xl font-bold mb-4 text-center">📈 Stock Calculator</h2>
+      <h2 className="text-xl font-bold mb-4 text-center">📈 Stock Calc</h2>
 
       <div className="space-y-3">
         <label className="block">
